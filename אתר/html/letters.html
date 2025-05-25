@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק זיכרון אותיות</title>
+    <link rel="stylesheet" href="..\css\letters.css">
+</head>
+<body>
+    <div class="settings-menu">
+        <button id="settings-icon" class="settings-toggle">⚙️</button>
+        <div id="settings-content">
+            <h3>הגדרות המשחק</h3>
+    
+            <label for="bg-image">בחר רקע למשחק:</label>
+            <select id="background-selector">
+                <option value="">ללא</option>
+                <option value="../images/1.png">רקע 1</option>
+                <option value="../images/2.png">רקע 2</option>
+                <option value="../images/3.png">רקע 3</option>
+                <label for="upload-background">העלאת רקע חדש:</label>
+                <input type="file" id="upload-background">
+            </select><br>
+    
+            <label for="shape">בחר צורת אותיות:</label>
+            <select id="shape-selector">
+                <option value="square">ריבוע</option>
+                <option value="circle">עיגול</option>
+                <option value="star">כוכב</option>
+            </select><br>
+    
+            <label for="letter-bg">בחר צבע רקע לאותיות:</label>
+            <input type="color" id="color-picker" value="#e0e0e0">
+            <li>שים לב! כאשר משנים צבע המשחק נעשה על פי שמיעה בלבד!</li>
+        </div>
+    </div>
+
+    <h1>משחק זיכרון אותיות</h1>
+    <div id="instructions">
+        <h4>הוראות משחק</h4>
+        <div class="instructions-content">
+        <p>במשחק זה עליך לזכור את סדר האותיות שמושמעות בקול וללחוץ עליהן לפי הסדר הנכון.</p>
+        <ul>
+            <li>לחץ על כפתור התחלה כדי להתחיל את המשחק.</li>
+            <li>המשחק ישמיע את רצף האותיות. לחכות שהרמקול יסיים לדבר לפני שלוחצים על הכפתורים.</li>
+            <li>לחץ על האותיות לפי הסדר שהושמע. אם תלחץ על אות לא נכונה, המשחק יראה לך את הטעות ויחזור להתחלה.</li>
+            <li>לחץ על אותות במקלדת שלך כדי להתקדם במשחק.</li>
+        </ul></div>
+    </div>
+
+    <div id="letters-container"></div>
+    <button id="start-button">התחל משחק</button>
+    <div id="message"></div>
+    <div id="score">ציון: 0</div>
+    <div id="score-total">סה"כ: 0</div>
+
+    <script src="..\js\letters.js"></script>
+</body>
+</html>

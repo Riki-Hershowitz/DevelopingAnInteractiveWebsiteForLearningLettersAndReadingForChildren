@@ -1,0 +1,143 @@
+/* סגנון הכללי של הדף */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    direction: rtl;
+    background-repeat: no-repeat;
+    background-attachment: fixed; background-size: cover; 
+}
+
+ul {
+    text-align: right;
+}
+
+/* סגנון תפריט ההגדרות */
+.settings-menu {
+    text-align:right;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.settings-toggle {
+    border: none;
+    margin: 1em;
+    padding: 0;
+    background-color: rgba(126, 252, 0, 0);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#instructions{
+    z-index: 1000;
+}
+
+#settings-content {
+    display: none;
+    position: fixed;
+    text-align: right;
+    width: 35vw;
+    background-color: #fdd6d6;
+    padding: 2em;
+    border: 1px solid #ff3b3b;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px gray;
+    margin-top: 0.5em;
+    z-index: 1000;
+}
+
+.instructions-content {
+    display: none;
+    position: fixed;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 10px gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    z-index: 1000;
+}
+
+#instructions:hover .instructions-content {
+    display: block;
+}
+
+/* סגנון קונטיינר הכפתורים */
+#letters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* סגנון כפתורי האותיות */
+.letter {
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* סגנון לכפתורי עיגול ומשולש */
+.letter.circle {
+    border-radius: 50%;
+}
+
+.letter.star {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+
+/* סגנון הודעות */
+#message {
+    font-size: 18px;
+    margin: 20px;
+}
+
+/* סגנון כפתור התחלה */
+#start-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button.pressed {
+    background-color: #c300ff;
+}
+
+.pressed {
+    background-color: #0ec7f0;
+}
+
+.letter.highlight {
+    background-color: yellow;
+}
+
+.wrong {
+    background-color: red;
+}
+#background-selector{
+    color: rgb(255, 0, 0);
+    background-color: #fffa6d;
+}

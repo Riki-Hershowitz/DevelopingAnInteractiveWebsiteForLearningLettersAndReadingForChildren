@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק קפיצות על קוביות עץ</title>
+    <link rel="stylesheet" href="..\css\kriha.css">
+    <link rel="stylesheet" href="..\css\styles.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div id="endgame" style="display: none;"></div>
+    <div id="welcome-message"></div>
+    <div id="your-score" style="display: none;">ניקוד ממשחקים קודמים: </div>
+    <div class="container">
+        <button id="setting">בוחרים דמות 😎</button>
+        <!-- מודל -->
+        <div id="game-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <table id="caracter-table">
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="game-description">
+        <h1>לימוד קריאה</h1>
+        <p>ברוכים הבאים למשחק לימוד קריאה!</p>
+        <p>ברמה 1- עליכם ללחוץ על האות שבה מתחילה התמונה המופיעה.</p>
+        <p>ברמה 2- עליכם ללחוץ על ההברה המתאימה שבה מתחילה המילה.</p>
+        <p>ברמה 3- עליכם ללחוץ על המילה שבה מופיע הניקוד הנכון של המילה המופיעה בתמונה.</p>
+        <p>כאשר תצברו מספיק נקודות תוכלו לבחור דמות מהמאגר 😊</p>
+        <p>כאשר נגמרים הלבבות המשחק נגמר.</p>
+        <p>אנא בחרו ברמה הרצויה 👇🏻.</p>
+    </div>
+
+    <select id="level-select">
+        <option value="1">רמה 1 - אותיות</option>
+        <option value="2">רמה 2 - הברות</option>
+        <option value="3">רמה 3 - כתיבת מילה</option>
+    </select>
+
+    <div class="image-container" id="image-container" style="display: none;">
+        <img src="" alt="אובייקט" id="object-image">
+    </div>
+    <div class="options-container" id="options-container" style="display: none;">
+        <!-- Options will be populated by JavaScript -->
+    </div>
+    
+    <div id="timer"></div>
+    <button id="start-game-button">התחל משחק</button>
+    <div id="points" style="display: none;">ניקוד במשחק זה: 0</div>
+    <div id="stage-progress-container"></div>
+    <div id="stage">
+        <span id="stage-number"></span>
+        <span id="stage-timer"></span>
+        <span id="hearts"></span>
+    </div>
+    </div>
+    <div id="game-container" style="display: none;">
+        <div id="background"></div>
+        <div id="character"></div>
+        <!-- קוביות עץ לאורך הדרך -->
+        <!-- הפיזור שווה בין קוביות וקצוות המסך -->
+        <div class="wooden-cube" style="left: calc( (100vw - 8 * 12vw) / 9 ); bottom: 0;"></div> <!-- קוביה ראשונה -->
+        <div class="wooden-cube" style="left: calc( (100vw - 8 * 12vw) / 9 + 12vw); bottom: 0;"></div>
+        <div class="wooden-cube" style="left: calc( (100vw - 8 * 12vw) / 9 + 2 * 12vw); bottom: 0;"></div>
+        <div class="wooden-cube" style="left: calc( (100vw - 8 * 12vw) / 9 + 3 * 12vw); bottom: 0;"></div>
+        <div class="wooden-cube" style="left: calc( (100vw - 8 * 12vw) / 9 + 4 * 12vw); bottom: 0;"></div>
+        <div class="wooden-cube" style="left: calc( (100vw - 8 * 12vw) / 9 + 5 * 12vw); bottom: 0;"></div>
+        <div class="wooden-cube" style="left: calc( (100vw - 8 * 12vw) / 9 + 6 * 12vw); bottom: 0;"></div>
+        <div class="wooden-cube" style="left: calc( (100vw - 8 * 12vw) / 9 + 7 * 12vw); bottom: 0;"></div>
+    </div>
+    <div id="message"></div>
+    <div id="white"></div>
+
+    <div id="level-up">עלית שלב!</div>
+    <a id="aToHome" href="../index.html">  חזרה לדף הבית 🏡</a>
+    <script src="..\js\kriha.js"></script>
+    <script src="..\js\scripts.js"></script>
+</body>
+
+</html>

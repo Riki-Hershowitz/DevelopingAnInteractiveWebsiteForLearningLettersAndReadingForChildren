@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הרשמה</title>
+    <link rel="stylesheet" href="..\css\styles.css">
+</head>
+<body>
+    <header>
+        <div id="welcome-message"></div>
+        <h1>הרשמה למערכת</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">דף הבית</a></li>
+                <li><a href="product.html">מוצרים</a></li>
+                <li><a href="cart.html">עגלת הקניות</a></li>
+                <li><a href="login.html">התחברות</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="register-form">
+            <div>
+                <label for="username">שם משתמש:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">סיסמה:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div>
+                <label for="confirm-password">אשר סיסמה:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit">הרשם</button>
+        </form>
+    </main>
+    <footer>
+        <p>©  כל הזכויות שמורות - ריקי הרשוביץ 0533107022.</p>
+    </footer>
+    <script src="..\js\scripts.js"></script>
+</body>
+</html>

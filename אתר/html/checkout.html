@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>תשלום</title>
+    <link rel="stylesheet" href="..\css\styles.css">
+</head>
+
+<body>
+    <header>
+        <div id="welcome-message"></div>
+        <h1>תשלום</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">דף הבית</a></li>
+                <li><a href="product.html">מוצרים</a></li>
+                <li><a href="cart.html">עגלת הקניות</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>פרטי התשלום</h2>
+        <form id="checkout-form">
+            <div>
+                <label for="card-number">מספר כרטיס:</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div>
+                <label for="expiry-date">תאריך תפוגה:</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+            </div>
+            <div>
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <p class="total-price"></p>
+            <button id="pay" type="submit">שלם עכשיו</button>
+        </form>
+    </main>
+    <footer>
+        <p>©  כל הזכויות שמורות - ריקי הרשוביץ 0533107022.</p>
+    </footer>
+    <script src="..\js\scripts.js"></script>
+</body>
+
+</html>

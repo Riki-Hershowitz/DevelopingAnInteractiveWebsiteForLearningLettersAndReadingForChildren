@@ -1,0 +1,259 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    color: #7c3737; /* מגדיר צבע טקסט */
+    background-color: #fff1f1;
+}
+
+header {
+    background-color: #285c5c;
+    height: 9vw;
+    color: white;
+    text-align: center;
+    box-shadow: 0px 6px 7px rgba(3, 3, 3, 0.2); /* מוסיף צל להדר */
+    padding: 1em; /* מגדיר מרווח פנימי לתוכן בהדר */
+    font-size: 1.5vw;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+header h1{
+    margin: 0.5em;
+    font-size: 2vw;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#gameslink{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s;
+}
+
+.aToGame{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s;
+}
+
+#game-diyuk_kriha{
+    position: absolute;
+    top: 40vh;
+    left: 35vw;
+}
+
+#game-letters{
+    align-items: center;
+    position: absolute;
+    top: 40vh;
+    right: 35vw;
+}
+
+.product {
+    height: 45vh;
+    border: 1px solid #ddd;
+    padding: 5vw;
+    margin: 5vw;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color:#cbf0cc42;  
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    height: 80%;
+    max-width: 100%;
+}
+
+button {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#cart-items .cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+#cart-items .cart-item:last-child {
+    border-bottom: none;
+}
+
+#cart-preview {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+/* עיצוב טבלה של מוצרים */
+#products-table {
+    width:90vw;
+    margin: 0.1em;
+    justify-content: space-around;
+}
+
+tbody{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25vw 25vw 25vw;
+    justify-content: space-around;
+}
+
+#products-table tr{
+    margin: 0.5em;
+}
+
+#products-table td {
+    border: 0.1em solid #ddd;
+    box-sizing: border-box;
+}
+
+#products-table img{
+    width: 100%;
+}
+
+#product-image-container {
+    position: relative;
+}
+
+#product-image {
+    max-width: 30vw;
+    max-height: 30vh;
+    transition: transform 0.2s;
+}
+
+#color-select {
+    margin-top: 10px;
+}
+
+
+        #product-image-container {
+            position: relative;
+        }
+
+        #product-image {
+            max-width: 300px;
+            max-height: 300px;
+            transition: transform 0.2s;
+        }
+
+        #product-info {
+            max-width: 400px;
+        }
+
+        #color-select {
+            margin-top: 10px;
+        }
+
+        #logout-container {
+            text-align: right;
+            margin-top: 10px;
+        }
+        
+        #logout-button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: fixed;
+            top: 10px;
+            right: 10px;
+        }
+        
+        #logout-button:hover {
+            background-color: #d32f2f;
+        }
+        
